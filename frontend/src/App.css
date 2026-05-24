@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, #dbeafe, transparent 30%),
+    radial-gradient(circle at top right, #f5d0fe, transparent 30%),
+    radial-gradient(circle at bottom left, #fde68a, transparent 25%),
+    radial-gradient(circle at bottom right, #bfdbfe, transparent 25%),
+    linear-gradient(135deg, #eef2ff, #fdf4ff);
+  color: #111827;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  padding: 40px;
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  color: #111827;
+}
+
+p {
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.card > p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #374151;
+  font-weight: 700;
+}
+
+textarea,
+select {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  background: white;
+  outline: none;
+}
+
+textarea {
+  height: 140px;
+  resize: none;
+}
+
+textarea:focus,
+select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15);
+}
+
+button {
+  display: block;
+  margin: 22px auto 0;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed, #ec4899);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.25);
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  opacity: 0.95;
+}
+
+.response-box {
+  margin-top: 34px;
+  padding: 28px;
+  background: linear-gradient(
+    135deg,
+    #dbeafe,
+    #ede9fe,
+    #fce7f3
+  );
+  border-radius: 22px;
+  border: 1px solid #c4b5fd;
+  text-align: left;
+}
+
+.feedback-section {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid #e5e7eb;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+  accent-color: #7c3aed;
+}
+
+input[type="range"]:nth-of-type(1) {
+  accent-color: #2563eb;
+}
+
+input[type="range"]:nth-of-type(2) {
+  accent-color: #7c3aed;
+}
+
+input[type="range"]:nth-of-type(3) {
+  accent-color: #ec4899;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle-label {
+  font-size: 14px;
+}
+
+.history-section {
+  margin-top: 30px;
+}
+
+.history-card {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #fef9c3,
+    #dcfce7,
+    #dbeafe
+  );
+  border-left: 8px solid #ec4899;
+  border-top: 1px solid #c7d2fe;
+}
+
+.dark {
+  background:
+    radial-gradient(circle at top left, #1e1b4b, transparent 30%),
+    radial-gradient(circle at top right, #312e81, transparent 30%),
+    radial-gradient(circle at bottom left, #0f172a, transparent 30%),
+    linear-gradient(135deg, #020617, #111827);
+}
+
+.dark .card {
+  background: #0f172a;
+}
+
+.dark h1,
+.dark h3,
+.dark p,
+.dark label {
+  color: white;
+}
+
+.dark textarea,
+.dark select {
+  background: #1e293b;
+  color: white;
+  border-color: #475569;
+}
+
+.dark .response-box {
+  background: linear-gradient(135deg, #1e293b, #312e81);
+  border-color: #475569;
+}
+
+.dark .history-card {
+  background: linear-gradient(135deg, #1e293b, #064e3b);
+  border-color: #334155;
+}
+.feedback-section label:nth-child(2) {
+  color: #2563eb;
+}
+
+.feedback-section label:nth-child(3) {
+  color: #7c3aed;
+}
+
+.feedback-section label:nth-child(4) {
+  color: #ec4899;
+}
